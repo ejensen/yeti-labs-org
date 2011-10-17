@@ -1,14 +1,13 @@
 #yeti { 
-	background-image:url('../img/yeti.png'); 
+	background-image:url('../img/yeti.png');
+	background-position: 232px 0;
 	position:absolute; 
 	bottom:0; 
 	right:0; 
-	height:82px; 
-	width:128px;
+	height:128px; 
+	width:232px;
 }
 
 #yeti:hover { 
-	background-image:url('../img/yeti-over.png'); 
-	height:128px; 
-	width:232px;
+	background-position: 0;
 }
