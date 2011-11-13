@@ -1,13 +1,41 @@
-#yeti { 
-	background-image:url('../img/yeti.png');
-	background-position: 232px 0;
-	position:absolute; 
-	bottom:0; 
-	right:0; 
-	height:128px; 
-	width:232px;
+body {
+	background-image: url('../img/bg.png');
+	padding-top: 48px;
 }
 
-#yeti:hover { 
+hr {
+	border-style: dashed;
+}
+
+h1, a:hover {
+	background-color: #ffc;
+}
+
+#main {
+	width: 320px;
+	position: relative;
+	margin: 0 auto; 
+	padding: 0;
+	background-color: #fff;
+	border-radius: 10px;
+}
+
+#content {
+	padding: 44px 22px 88px 22px;
+}
+
+#yeti {
+	position: absolute; 
+	bottom: 0; 
+	right: 0; 
+	background-image: url('../img/yeti.png');
+	background-position: -336px -46px;
+	height: 82px; 
+	width: 128px;
+}
+
+#yeti:hover {
 	background-position: 0;
+	height: 128px; 
+	width: 232px;
 }
