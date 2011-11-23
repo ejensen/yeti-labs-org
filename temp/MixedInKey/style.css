@@ -1,0 +1,156 @@
+﻿header, section {
+	display: block;
+}
+
+html {
+	font-size: 100%;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+}
+
+img {
+	border: 0;   
+}
+
+/* Addresses CSS quotes not supported in IE6/7  */
+q {
+	quotes: none;
+}
+
+/* Addresses quote property not supported in Safari 4 */
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+ul {
+	padding-left: 0;
+	list-style: none;
+}
+
+li:before {
+	content: "* ";
+}
+
+h1, h2, h3, h4 {
+	font-weight: normal;
+	margin: 0;
+	color: #565757;
+}
+
+h1 {
+	font-size: 36px;
+	margin: 26px 0 6px 0;
+}
+
+h2 {
+	font-size: 24px;
+	margin: 0 0 16px 0;
+}
+
+h3 {
+	margin-top: -8px;
+	padding-bottom: 8px;
+	font-size: 36px;
+}
+
+h4 {
+	font-weight: normal;   
+}
+
+a {
+	outline: 0;
+	text-decoration: none;
+	color: #575757;
+}
+
+body {
+	background-image: url(img/pageBackground.png);
+	background-repeat: repeat-x;
+	background-color: #f0f0f0;
+	font-family: 'Helvetica Neue', HelveticaNeue, 'Neue Helvetica', NeueHelvetica, Helvetica, 'Arimo', Arial, san-sarif;
+	font-size: 18px;
+	color: #6f6f6f;
+	margin: 0;
+	padding-bottom: 36px;
+}
+
+header {
+	text-align: center;   
+}
+
+section {
+	background: #FFF;
+	width: 787px;
+	margin: 0 auto 18px auto;
+	padding: 27px 32px;
+	-webkit-border-radius: 12px;
+	 -khtml-border-radius: 12px;
+	   -moz-border-radius: 12px;
+			border-radius: 12px;
+}
+
+.inline-block { 
+	display: -moz-inline-stack;
+	display: inline-block;
+	zoom: 1;
+	*display: inline;
+}
+
+.portrait {
+	width: 77px;
+	height: 77px;
+	vertical-align: middle;
+}
+
+.quote {
+	width: 600px;
+	height: 77px;
+	margin-left: 25px;
+	vertical-align: middle;
+}
+
+.quote h4 {
+   margin: 0 0 0.25em 0;
+}
+
+.testimony {
+	margin-bottom: 22px;
+}
+
+#buyWindowsButton, #buyMacOSXButton {
+	width: 287px;
+	height: 68px;
+	color: #FFF;
+	font-family: Arial, san-sarif;
+	font-weight: bold;
+	padding: 27px 0 0 80px;
+	margin: 14px -80px -27px 12px;
+	display: -moz-inline-stack;
+	display: inline-block;
+	zoom: 1;
+	*display: inline;
+	text-shadow: 0 1px 0 rgba(0,0,0,.25);
+}
+
+#buyWindowsButton:hover, #buyMacOSXButton:hover {
+	text-decoration: underline;
+}
+
+#buyWindowsButton {
+	background: transparent url('img/buyWindows.png') no-repeat;
+}
+
+#buyMacOSXButton{
+	background: transparent url('img/buyMacOSX.png') no-repeat;
+}
+
+#upgrade {
+	font-size: 0.75em;
+	display: block;
+	margin: 2em 0 2.5em 0;
+}
+
+#upgrade, #homepage{
+	text-decoration: underline;
+}
