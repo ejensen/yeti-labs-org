@@ -506,9 +506,3 @@ Options -Indexes
 	CheckSpelling On
 </IfModule>
 
-<IfModule mod_rewrite.c>
-	RewriteEngine on
-	RewriteMap lowercase int:tolower
-	RewriteCond $1 [A-Z]
-	RewriteRule ^/(.*)$ /${lowercase:$1} [R=301,L]
-</IfModule>	
