@@ -507,6 +507,8 @@ Options -Indexes
 </IfModule>
 
 <IfModule mod_rewrite.c>
-	RewriteMap tolowercase int:tolower 
-	RewriteRule ^(.*)$ ${tolowercase:$1}
+	RewriteEngine on
+	RewriteMap lowercase int:tolower
+	RewriteCond $1 [A-Z]
+	RewriteRule ^/(.*)$ /${lowercase:$1} [R=301,L]
 </IfModule>	
