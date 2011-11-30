@@ -503,6 +503,10 @@ Options -Indexes
 </IfModule>
 
 <IfModule mod_speling.c>
-	CheckCaseOnly On
 	CheckSpelling On
 </IfModule>
+
+<IfModule mod_rewrite.c>
+	RewriteMap tolowercase int:tolower 
+	RewriteRule ^(.*)$ ${tolowercase:$1}
+</IfModule>	
