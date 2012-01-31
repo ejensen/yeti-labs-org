@@ -20,7 +20,7 @@ header, section {
 
 section {
 	background: #FFF;
-	padding: 8px 0;
+	padding: 20px 0;
 	margin: 8px auto;
 	-webkit-border-radius: 8px;
 	 -khtml-border-radius: 8px;
@@ -28,9 +28,9 @@ section {
 			border-radius: 8px;
 }
 
-section > p {
+section p {
 	padding-left: 32px;
-	padding-right: 32px;	
+	padding-right: 32px;
 }
 
 /* Menu */
@@ -109,4 +109,21 @@ section > p {
 	background: url('../images/button_bg.gif') repeat-x;
 	border-top: 0;
 	border-bottom: 0;
+}
+
+.no-borderradius .menu {
+	background: url('../images/button_bg.gif') repeat-x;
+}
+
+.no-borderradius .menu > li:first-child {
+	background: url('../images/button_left.gif') no-repeat;
+	border-top: 0;
+	border-bottom: 0;
+	border-left: 0;
+}
+
+.no-borderradius .menu > li:last-child {
+	background: url('../images/button_right.gif') top right no-repeat;
+	margin-right: -6px;
+	border: 0;
 }
