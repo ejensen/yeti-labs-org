@@ -14,15 +14,16 @@
 	</script>
 </head>
 <body>
+<div id="google_translate_element" style="float:right"></div>
 <header>
-<ul class="menu"> 
+<!--<ul class="menu"> 
 	<li><a href="#Home">主页</a></li> 
 	<li><a href="#Screenshots">屏幕截图</a></li> 
 	<li><a href="#How-to Guide">入门指南</a></li> 
 	<li><a href="#Reviews+Awards">评论+奖项</a></li> 
 	<li><a href="#Community">社区</a></li> 
 	<li><a href="#Buy Now">立刻购买</a></li>
-</ul>
+</ul>-->
 <ul class="menu"> 
 	<li><a href="#Home">Home</a></li> 
 	<li><a href="#Screenshots">Screenshots</a></li> 
@@ -41,5 +42,13 @@
 <!--[if lt IE 9]>
 	<script src="scripts/curvycorners.js"></script>
 <![endif]-->
+<script>
+function googleTranslateElementInit() {
+	new google.translate.TranslateElement({
+		pageLanguage: 'en'
+	}, 'google_translate_element');
+}
+</script>
+<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </body>
 </html>
