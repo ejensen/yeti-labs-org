@@ -60,11 +60,11 @@ a:hover {
 }
 
 #buyWindowsButton {
-	background: transparent url('../Images/buyWindows.png') no-repeat;
+	background: transparent url('../images/buyWindows.png') no-repeat;
 }
 
 #buyMacOSXButton {
-	background: transparent url('../Images/buyMacOSX.png') no-repeat;
+	background: transparent url('../images/buyMacOSX.png') no-repeat;
 }
 
 /* LightBox styles */
