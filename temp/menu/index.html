@@ -10,6 +10,16 @@
 	<script src="scripts/jquery-pageshade.js" type="text/javascript"></script>
 </head>
 <body>
+<div id="fb-root"></div>
+<script>
+(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+</script>
 <header>
 <ul class="menu"> 
 	<li><a href="#Home">主页</a></li> 
@@ -56,8 +66,7 @@
 <div id="share_shade">
 	<div id="share_shade_inner">
 		<h3>You should follow Mixed In Key on Facebook:</h3>
-		<div id="fb-root"></div>
-		<div class="fb-like" data-href="http://facebook.com/mixedinkey" data-send="true" data-show-faces="true" data-font="arial"></div>
+		<div class="fb-like" data-href="http://facebook.com/mixedinkey" data-send="true" data-width="450" data-show-faces="true"></div>
 	</div>
 </div>
 <script>
@@ -66,7 +75,7 @@
 		$('#share_shade').pageShade();
 	});
 </script>
-<script src="http://connect.facebook.net/en_US/all.js#xfbml=1" type="text/javascript"></script>
+<script src="http://connect.facebook.net/en_US/all.js" type="text/javascript"></script>
 <!--[if lt IE 9]>
 	<script src="scripts/curvycorners.js"></script>
 <![endif]-->
