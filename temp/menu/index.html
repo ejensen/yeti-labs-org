@@ -7,14 +7,7 @@
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
 	<script src="scripts/modernizr.custom.js" type="text/javascript"></script>
 	<script src="scripts/menu.js" type="text/javascript"></script>
-	<script>
-		function googleTranslateElementInit() {
-			new google.translate.TranslateElement({
-				pageLanguage: 'en'
-			}, 'google_translate_element');
-		}
-	</script>
-	<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+	<script src="scripts/jquery-pageshade.js" type="text/javascript"></script>
 </head>
 <body>
 <div id="google_translate_element" style="text-align:right"></div>
@@ -37,11 +30,54 @@
 </ul>
 </header>
 <section>
-	<p>Mixed In Key is award-winning DJ software that gives you the #1 technique of the world's best DJ's - harmonic mixing.</p>
-	<p>What is Harmonic Mixing? It's mixing one track with the next without a key clash.  With harmonic mixing, you can create unusual mash-ups (The Beatles vs. Jay-Z), or just enjoy flawless mixing with the latest tracks from your favorite producers.</p>
-	<p>To use harmonic mixing, you need to know the key of every song you play. Mixed In Key software scans your entire music collection and displays key results in our easy-to-use Camelot notation (ex: 4A, 6B).  It shows you which songs are compatible for flawless mixing.</p>
-	<p>From there, you can use Mixed In Key with Serato, Traktor, Ableton Live, CD-Js and all other DJ software and hardware.  Mixed In Key shows you the key results, and you choose how to mix the songs together.</p>
+	<h1>How-To Guide for Harmonic Mixing</h1>
+	<p>Mixing harmonically enables you to create smooth transitions between songs and ensure that your vocals, melodies, and basslines sound great together.</p>
+	<p>Harmonic mixing opens a new realm of creativity. You can create unusual mash-ups (The Beatles vs. Jay-Z), or just enjoy flawless mixing with the latest tracks from your favorite producers.</p>
+	<p>To use harmonic mixing, you need to know the key of every song you play. Mixed In Key software scans your entire music collection and displays key results in our easy-to-use Camelot notation (ex: 4A, 6B).</p>
+	<br />
+	<h2>Using the Camelot Easymix Wheel</h2>
+	<p>The Camelot notation makes harmonic mixing easy. Here is a picture of the Camelot Easymix Wheel:</p>
+	<p><a href="http://www.harmonic-mixing.com/Images/camelotHarmonicMixing.jpg"><img src="http://www.harmonic-mixing.com/Images/camelotSmall.jpg"/></a></p>
+	<br />
+	<p>On this wheel, musical keys can be seen as &quot;hours&quot; on a clock. For example, 4 o&#39;clock corresponds to 4B or 4A. The letter &quot;B&quot; represents Major keys. The letter &quot;A&quot; represents Minor keys.</p>
+	<br />
+	<h1>Improve Your DJing</h1>
+	<p>To use harmonic mixing in your DJ sets, you can change keys with every mix by moving around the Camelot wheel one step at a time. Mix between songs by subtracting one hour (-1), adding one hour (+1), or staying in the same hour as your last song. So if you&#39;re playing a song tagged 4A, your next track can be 3A, 4A or 5A. </p>
+    <p>For a special effect, you can mix between the inner circle and outer circle. For example, mix from 4A to 4B. </p>
+    <p>That&#39;s all it takes to start harmonic mixing – just scan your files with Mixed In Key and choose songs that are adjacent to each other on the Camelot wheel. Harmonic mixing works for all music genres because it is based on music theory.</p>
+	<br />
+    <h2>Example mix</h2>
+	<p>For your first harmonic mix, find two songs that have the same key code. Mix them together using your favorite DJ software or hardware and you&#39;ll hear a smooth transition every time. From there, you can experiment with other harmonic transitions.</p>
+	<p>We recommend going clock-wise or counter-clockwise around the wheel, changing key every couple of songs.&nbsp; For example, we may play:&nbsp; 10A &gt; 10A &gt; 10B &gt; 9B &gt; 8B &gt; 8A &gt; 7A &gt; 6A for a 100% harmonic DJ set.&nbsp; It never gets boring because there is a music progression happening during the entire mix.</p><br />
+	<h2>Summary</h2>
+	<p>Scan your files with Mixed In Key Version 5.0.&nbsp; Use the Camelot Wheel to pick compatible tracks.&nbsp; Mix them using your favorite DJ equipment or software.&nbsp;  Result: Harmonic Mixing.</p>
+	<br />
+	<p>Check out the reviews from David Guetta, Pete Tong, Dubfire, Hernan Cattaneo, BT, and many others.&nbsp; </p>
 </section>
+<div id="share_shade">
+	<aside>
+		<h3>Please tell your friends about Mixed In Key 5:</h3>
+		<div id="fb-root"></div>
+		<div class="fb-like" data-href="http://facebook.com/mixedinkey" data-send="true" data-layout="button_count" data-show-faces="true" data-font="arial"></div>
+		<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.MixedInKey.com" data-text="To all my DJ buddies, check out Mixed In Key - this is awesome software for DJs" data-count="horizontal" data-via="MixedInKey">Tweet</a>
+	</aside>
+</div>
+<script>
+	// Initializes the page shade
+	$(function () {
+		$('#share_shade').pageShade();
+	});
+</script>
+<script>
+	function googleTranslateElementInit() {
+		new google.translate.TranslateElement({
+			pageLanguage: 'en'
+		}, 'google_translate_element');
+	}
+</script>
+<script src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<script src="http://connect.facebook.net/en_US/all.js#xfbml=1" type="text/javascript"></script>
+<script src="http://platform.twitter.com/widgets.js" type="text/javascript"></script>
 <!--[if lt IE 9]>
 	<script src="scripts/curvycorners.js"></script>
 <![endif]-->

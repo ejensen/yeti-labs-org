@@ -68,7 +68,7 @@ body {
 	background-image: url(img/pageBackground.png);
 	background-repeat: repeat-x;
 	background-color: #f0f0f0;
-	font-family: 'Helvetica Neue', HelveticaNeue, 'Neue Helvetica', NeueHelvetica, Helvetica, 'Arimo', Arial, san-sarif;
+	font-family: 'Helvetica Neue', HelveticaNeue, 'Neue Helvetica', NeueHelvetica, Helvetica, 'Arimo', Arial, sans-serif;
 	font-size: 18px;
 	color: #6f6f6f;
 	margin: 0;

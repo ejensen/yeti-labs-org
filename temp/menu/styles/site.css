@@ -3,11 +3,15 @@
 }
 
 body {
-	font-family: HelveticaNue, "Helvetica Nue", helvetica, arial, san-sarif;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
 	font-size: 18px;
 	background-repeat: repeat-x;
 	background-color: #f0f0f0;
-	color: #6f6f6f;
+	font-size: 13px;
+	line-height: 150%;
+	color: #333;
+	padding: 0 0 75px 0;
+	margin: 0;
 }
 
 header {
@@ -28,9 +32,16 @@ section {
 			border-radius: 8px;
 }
 
-section p {
+section * {
 	padding-left: 32px;
 	padding-right: 32px;
+}
+
+h1, h2 {
+	font-weight: normal;
+	font-size: 20px;
+	font-family: georgia, serif;
+	color: #0087EC;
 }
 
 /* Menu */
@@ -88,7 +99,7 @@ section p {
 }
 
 .menu a {
-	font-family: "Arial Rounded", ArialRound, ArialRounded, Arial, san-sarif;
+	font-family: "Arial Rounded", ArialRound, ArialRounded, Arial, sans-serif;
 	display: inline-block;
 	white-space: nowrap;
 	width: 100%; 
@@ -126,4 +137,21 @@ section p {
 	background: url('../images/button_right.gif') top right no-repeat;
 	margin-right: -6px;
 	border: 0;
+}
+
+/* page shade */
+#share_shade {
+	display: none;
+	color: white;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	margin:0;
+	background-color: #0081EA;
+	background-color: rgba(0, 129, 234, 0.8);
+}
+
+#share_shade > * {
+	width: 900px;
+	margin: auto;
 }
