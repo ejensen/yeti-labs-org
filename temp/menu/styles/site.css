@@ -1,5 +1,5 @@
-﻿header, section, aside {
-	display: block;
+﻿html {
+	height: 100%
 }
 
 body {
@@ -10,12 +10,16 @@ body {
 	font-size: 13px;
 	line-height: 150%;
 	color: #333;
-	padding: 0 0 125px 0;
 	margin: 0;
+	padding: 0 0 130px 0;
 }
 
 img {
 	border: 0;
+}
+
+header, section, aside {
+	display: block;
 }
 
 header {
@@ -145,18 +149,20 @@ h1, h2 {
 
 /* page shade */
 #share_shade {
-	height: 125px;
+	height: 130px;
 	display: none;
 	color: white;
 	position: fixed;
 	bottom: 0;
+	z-index: 999;
 	width: 100%;
-	margin:0;
 	background-color: #0081EA;
 	background-color: rgba(0, 129, 234, 0.75);
 }
 
-#share_shade > * {
+#share_shade_inner {
+	height: 130px;
+	position: relative;
+	margin: 0 auto;
 	width: 900px;
-	margin: auto;
 }

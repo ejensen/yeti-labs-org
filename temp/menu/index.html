@@ -10,7 +10,6 @@
 	<script src="scripts/jquery-pageshade.js" type="text/javascript"></script>
 </head>
 <body>
-<div id="google_translate_element" style="text-align:right"></div>
 <header>
 <ul class="menu"> 
 	<li><a href="#Home">主页</a></li> 
@@ -55,7 +54,7 @@
 	<p>Check out the reviews from David Guetta, Pete Tong, Dubfire, Hernan Cattaneo, BT, and many others.</p>
 </section>
 <div id="share_shade">
-	<div>
+	<div id="share_shade_inner">
 		<h3>You should follow Mixed In Key on Facebook:</h3>
 		<div id="fb-root"></div>
 		<div class="fb-like" data-href="http://facebook.com/mixedinkey" data-send="true" data-show-faces="true" data-font="arial"></div>
@@ -67,14 +66,6 @@
 		$('#share_shade').pageShade();
 	});
 </script>
-<script>
-	function googleTranslateElementInit() {
-		new google.translate.TranslateElement({
-			pageLanguage: 'en'
-		}, 'google_translate_element');
-	}
-</script>
-<script src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 <script src="http://connect.facebook.net/en_US/all.js#xfbml=1" type="text/javascript"></script>
 <!--[if lt IE 9]>
 	<script src="scripts/curvycorners.js"></script>
