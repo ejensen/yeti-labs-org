@@ -161,8 +161,6 @@ h1, h2 {
 }
 
 #share_shade_inner {
-	height: 130px;
-	position: relative;
-	margin: 0 auto;
+	margin: 1em auto;
 	width: 900px;
 }
