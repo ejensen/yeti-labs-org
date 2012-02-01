@@ -145,6 +145,7 @@ h1, h2 {
 
 /* page shade */
 #share_shade {
+	height: 125px;
 	display: none;
 	color: white;
 	position: fixed;
