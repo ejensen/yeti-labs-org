@@ -1,6 +1,6 @@
 yepnope({
 	test: Modernizr.flexbox,
-	nope: ['scripts/selectivizr.min.js', 'scripts/flexie.min.js'],
+	nope: ['scripts/flexie.min.js'],
 	complete: function () {
 		if (document.Flexie){
 			$(document.body).change(function () {
