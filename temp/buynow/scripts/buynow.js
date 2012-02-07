@@ -10,6 +10,7 @@ $(function () {
 		Name: 'Mixed In Key 5.0',
 		Price: 58,
 		BundleCode: 10,
+		BannerImage: 'images/shoppingCartTop_MIK.png',
 		Description: 'Mixed In Key is award-winning DJ software that gives you the #1 technique of the world\'s best DJ\'s - harmonic mixing.'
 	};
 
@@ -17,6 +18,7 @@ $(function () {
 		Name: 'Platinum Notes 3.0',
 		Price: 98,
 		BundleCode: 20,
+		BannerImage: 'images/shoppingCartTop_PN.png',
 		Description: 'Platinum Notes improves your files and gives them perfect volume and correct pitch.  It removes distortion and clipped peaks.  100% automated and designed for top DJs.'
 	};
 
@@ -25,12 +27,12 @@ $(function () {
 		Price: 39,
 		Code: 1200,
 		BundleCode: 30,
-		Description: 'Platinum Notes improves your files and gives them perfect volume and correct pitch.  It removes distortion and clipped peaks.  100% automated and designed for top DJs.'
+		BannerImage: 'images/shoppingCartTop.png',
+		Description: 'We created Mashup software to help you beatmatch tracks and save your results to new MP3 files.'
 	};
 
 	var options = {
-		Product: Mashup,
-		BannerImage: 'images/shoppingCartTop.png',
+		Product: Mashup, // Main product.
 		Bundles: [MIK, PN] // Choose which bundles to display.
 	};
 

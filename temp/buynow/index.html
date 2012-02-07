@@ -13,20 +13,22 @@
 	<script id="buyNowTemplate" type="text/html">
 		<div class="lightbox">
 			<a class="close" href="#">Close</a>
-			<div class="banner"><img src="${BannerImage}" alt="${Product.Name} Digital Download"/></div>
+			<div class="banner"><img src="${Product.BannerImage}" alt="${Product.Name} Digital Download"/></div>
 			<table cellpadding="5" cellspacing="2" border="0" width="100%">
 				<tbody>
 					<tr style="background-color: #efefef" height="26">
 						<td><label><input type="radio" checked="checked"><strong> ${Product.Name}</strong>&nbsp;(${OS.Description})</label></td>
-						<td style="text-align:right;">Price:&nbsp; $${Product.Price} US Dollars</td>
+						<td nowrap style="text-align:right;">Price: &nbsp;$${Product.Price} US Dollars</td>
 					</tr>
-				</tbody>
+					{{each Bundles}}
+					<tr>
+						<td class="bundle">
+							<label><input type="checkbox" data-code="${BundleCode}" class="bundle_checkbox"/>  Add ${Name} to the checkout.  ${Description}<br/><strong>[+$${Price}]</strong></label>
+						</td>
+					</tr>
+					{{/each}}
+			</tbody>
 		</table>
-		{{each Bundles}}
-		<div class="bundle">
-			<label><input type="checkbox" data-code="${BundleCode}" class="bundle_checkbox"/>  Add ${Name} to the checkout.  ${Description}<br/><strong>[+$${Price}]</strong></label>
-		</div>
-		{{/each}}
 		<div class="right-align" style="margin-top: 1.5em;">
 			<p class="smallText"><strong>Please choose your payment method below:</strong></p>
 			<a id="paypal_button" target="_blank"><img src="images/paypal.gif" alt="Checkout Now" style="vertical-align:middle;"/></a>
