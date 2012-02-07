@@ -11,9 +11,6 @@ img {
 	border: 0;   
 }
 
-a {
-	color: #575757;
-}
 .section {
 	background: #FFF;
 	width: 700px;
@@ -78,6 +75,7 @@ a {
 	font-size: 11px;
 	background-color: #efefef;
 	padding: 2px 5px;
+	color: #575757;
 }
 
 .lightbox .close:hover {
@@ -92,4 +90,8 @@ a {
 .lightbox .right-align {
 	text-align: right;
 	padding: 7px;
+}
+
+.lightbox .bundle {
+	margin: 1.5em 10px;
 }
