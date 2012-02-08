@@ -1,6 +1,6 @@
 $(function () {
-	var PAYPAL_LINK = 'https://www.e-junkie.com/ecom/gb.php?on0=D&os0=MIK&c=single&cl=1090&i=';
-	var GOOGLECHECKOUT_LINK = 'https://www.e-junkie.com/ecom/gb.php?&on0=D&os0=MIK&c=gc&cl=1090&ejc=4&i=';
+	var PAYPAL_LINK = 'https://www.e-junkie.com/ecom/gb.php?on0=Dos0=MIK&c=single&cl=1090&i=';
+	var GOOGLECHECKOUT_LINK = 'https://www.e-junkie.com/ecom/gb.php?on0=D&os0=MIK&c=gc&cl=1090&ejc=4&i=';
 
 	var OS = {
 		Win: { Description: 'Digital Download for Windows 7 / XP / Vista', Code: 0 },
