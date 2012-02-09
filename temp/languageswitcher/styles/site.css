@@ -1,0 +1,26 @@
+﻿body {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	background-color: #f0f0f0;
+	margin: 0;
+}
+
+#language_switcher_wrapper {
+	position: absolute;
+	top: 0;
+	right: 0;
+	text-align:left;
+	margin-top: 1em;
+	font-size: 12px;
+}
+
+#MIKGLOBAL_topnav { background: url(http://c441723.r23.cf2.rackcdn.com/tab_background.png); height: 82px; text-align: center; margin: 0 auto 10px; }
+#MIKGLOBAL_topnav > ul { list-style: none; margin: 0 auto; width: 618px; padding-right: 40px;}
+#MIKGLOBAL_topnav > ul > li { float: left; }
+#MIKGLOBAL_topnav > ul > li  > a { display: block; }
+#MIKGLOBAL_topnav > ul > li.mik > a { background: url(http://c441723.r23.cf2.rackcdn.com/tab_mik.png) no-repeat; height: 77px; width: 190px; }
+#MIKGLOBAL_topnav > ul > li.mik > a:hover, #MIKGLOBAL_topnav > ul > li.mik > a.selected  { background-position: 0 -82px; }
+#MIKGLOBAL_topnav > ul > li.pn > a { background: url(http://c441723.r23.cf2.rackcdn.com/tab_pn.png) no-repeat; height: 77px; width: 235px; }
+#MIKGLOBAL_topnav > ul > li.pn > a:hover, #MIKGLOBAL_topnav > ul > li.pn > a.selected { background-position: 0 -82px; }
+#MIKGLOBAL_topnav > ul > li.mashup > a { background: url(http://c758895.r95.cf2.rackcdn.com/tab_mashup.png) no-repeat; height: 77px; width: 193px; }
+#MIKGLOBAL_topnav > ul > li.mashup > a:hover, #MIKGLOBAL_topnav > ul > li.mashup > a.selected { background-position: 0 -82px; }
+#MIKGLOBAL_topnav > ul > li > a span { display: none; }
