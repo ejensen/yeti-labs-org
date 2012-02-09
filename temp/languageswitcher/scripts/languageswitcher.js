@@ -4,7 +4,7 @@
 	function getCookie(name) {
         var pairs = document.cookie.split('; ');
 		var i, pair;
-        while (i = 0; i < pairs.length; i++) {
+        for (i = 0; i < pairs.length; i++) {
 			pair = pairs[i];
 			pairs[i].split('=')
             if (decodeURIComponent(pair[0]) === name) {
