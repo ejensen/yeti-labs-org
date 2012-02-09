@@ -6,10 +6,9 @@
 
 #language_switcher_wrapper {
 	position: absolute;
-	top: 0;
+	top: 1em;
 	right: 0;
 	text-align:left;
-	margin-top: 1em;
 	font-size: 12px;
 }
 
