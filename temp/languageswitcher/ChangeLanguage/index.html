@@ -16,7 +16,7 @@
 		}
 		
 		var lang = getParameterByName('lang');
-		var newRedirect = window.location.href.substring(0, window.location.href.indexOf('ChangeLanguage')) + lang;
+		var newRedirect = location.protocol + '//' + location.host + '/' + lang  + '/' + window.location.path.substring(0, window.location.path.indexOf('ChangeLanguage'));
 		
 		alert('Changing language to: ' + lang);
 		
