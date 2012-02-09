@@ -14,19 +14,19 @@
 		  else
 			return decodeURIComponent(results[1].replace(/\+/g, ' '));
 		}
-		
+
 		var pattern = '${host}/${lang}/${path}';
-		
+
 		var lang = getParameterByName('lang');
-		
+
 		var newRedirect = window.location.protocol + '//' +
 							pattern.replace('${host}', window.location.host)
 							.replace('${path}', window.location.pathname.substring(0, window.location.pathname.indexOf('ChangeLanguage')))
 							.replace('${lang}', lang)
 							.replace(/\/\//g, '/');
-		
+
 		alert('Changing language to: ' + lang);
-		
+
 		alert('Now redirecting to: ' + newRedirect);
 		window.location.replace(newRedirect);
 	</script>
