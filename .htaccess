@@ -536,6 +536,7 @@ AddCharset utf-8 .css .js .xml .json .rss .atom
 </IfModule>
 
 <IfModule mod_alias.c>
+Redirect 301 projects/toggleswitch toggleswitch
 RedirectMatch 301 projects/toggleswitch/(.*) http://yetilabs.org/toggleswitch/$1
 </IfModule>
 
