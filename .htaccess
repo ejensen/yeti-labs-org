@@ -535,6 +535,8 @@ AddCharset utf-8 .css .js .xml .json .rss .atom
   php_value session.cookie_httponly true
 </IfModule>
 
+RedirectMatch 301 projects/toggleswitch(.*) toggleswitch/$1
+
 <IfModule mod_speling.c>
 	CheckSpelling On
 </IfModule>
