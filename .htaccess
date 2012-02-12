@@ -536,10 +536,9 @@ AddCharset utf-8 .css .js .xml .json .rss .atom
 </IfModule>
 
 <IfModule mod_alias.c>
-RedirectMatch 301 /projects/toggleswitch(.*) /toggleswitch$1
+  RedirectMatch 301 /projects/toggleswitch(.*) /toggleswitch$1
 </IfModule>
 
 <IfModule mod_speling.c>
-	CheckSpelling On
+  CheckSpelling On
 </IfModule>
-
