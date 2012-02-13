@@ -2,28 +2,43 @@ body {
 	background-image: url('../img/bg.png');
 	padding: 48px 0;
 }
-
 hr {
 	border-style: dashed;
 }
-
+h1, h2, h3, h4, h5, h6, body {
+	font-family: Georgia, "Times New Roman", serif;
+}
 h1, a:hover {
 	background-color: #ffc;
 }
-
+a {
+	text-decoration: none;
+	border-bottom: 1px dashed #AAA;
+}
+a:hover{
+	border-bottom-color: #666;
+}
+nav > ul > li > a {
+	line-height: 32px;
+	font-size: 28px;
+}
+nav > ul > li > img {
+	vertical-align: text-bottom;
+	margin-right: 1em;
+}
 #main {
 	width: 320px;
 	position: relative;
 	margin: 0 auto;
 	padding: 0;
 	background-color: #fff;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
 	border-radius: 10px;
 }
-
 #content {
 	padding: 44px 22px 88px 22px;
 }
-
 #yeti {
 	position: absolute; 
 	bottom: 0; 
@@ -33,7 +48,6 @@ h1, a:hover {
 	height: 82px; 
 	width: 128px;
 }
-
 #yeti:hover {
 	background-position: 0;
 	height: 128px; 
