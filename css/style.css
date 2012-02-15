@@ -34,10 +34,10 @@ nav > ul > li > img {
 	width: 320px;
 	margin: 0 auto;
 	padding: 0;
-}
-#main > section {
-	height: 328px;
 	position: relative;
+}
+section {
+	height: 328px;
 	background-color: white;
 	-webkit-border-radius: 10px;
 	-khtml-border-radius: 10px;
@@ -53,7 +53,7 @@ nav > ul > li > img {
 #yeti {
 	position: absolute; 
 	bottom: 0; 
-	right: 0; 
+	right: 0;
 	background-image: url('../img/yeti.png');
 	background-position: -336px -46px;
 	height: 82px; 
@@ -68,6 +68,8 @@ footer {
 	position: absolute;
 	bottom: 0;
 	right: 0;
+	width: 100px;
+	text-align:right;
 }
 #contact {
 	font-style:italic;
