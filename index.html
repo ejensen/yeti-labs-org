@@ -8,9 +8,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="css/base.css">
 	<link rel="stylesheet" href="css/style.css">
-	<!--[if lt IE 9]>
-		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-	<![endif]-->
+	<script type="text/javascript" src="scripts/modernizr.js"></script>
+	<script type="text/javascript">yepnope({test: Modernizr.borderradius,  nope: 'scripts/curvycorners.js'});</script>
 </head>
 <body>
 	<div id="main">
@@ -37,9 +36,10 @@
 					<li/>
 				</ul>
 			</nav>
+			<span id="yeti"></span>
 		</section>
-		<div id="yeti"></div>
 	</div>
+	<footer><a id="contact" href="mailto:contact@yetilabs.org">© eric jensen</a></footer>
 	<script type="text/javascript">
 		var _gaq = _gaq || [];
 		_gaq.push(['_setAccount', 'UA-27753955-3']);
