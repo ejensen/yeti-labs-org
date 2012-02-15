@@ -66,7 +66,7 @@ $(function () {
 
 		var cookie_value = getCookie('MixedInKeyVIP');
 		if (cookie_value) {
-			cookie_value = cookie_value.substring('VIP='.length(), cookie_value.length());
+			cookie_value = cookie_value.substring('VIP='.length, cookie_value.length);
 			checkout_params += AFFILIATE_PARAM + cookie_value;
 		}
 
