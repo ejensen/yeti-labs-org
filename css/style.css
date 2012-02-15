@@ -20,24 +20,28 @@ a:hover{
 }
 nav > ul > li > a {
 	line-height: 32px;
-	font-size: 28px;
+	font-size: 26px;
 }
 nav > ul > li > img {
-	vertical-align: text-bottom;
+	vertical-align: bottom;
 	margin-right: 1em;
 }
 #main {
 	width: 320px;
+	height: 400px;
 	position: relative;
 	margin: 0 auto;
 	padding: 0;
-	background-color: #fff;
+	background-color: white;
 	-webkit-border-radius: 10px;
 	-moz-border-radius: 10px;
 	border-radius: 10px;
+	-moz-box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+	-webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+	box-shadow: 0 1px 3px rgba(0,0,0,0.3);
 }
 #content {
-	padding: 44px 22px 88px 22px;
+	padding: 36px 22px;
 }
 #yeti {
 	position: absolute; 
