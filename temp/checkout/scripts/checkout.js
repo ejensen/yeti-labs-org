@@ -1,6 +1,9 @@
 $(function () {
-	var PAYPAL_LINK = 'https://www.e-junkie.com/ecom/gb.php?on0=Dos0=MIK&c=single&cl=1090&i=';
-	var GOOGLECHECKOUT_LINK = 'https://www.e-junkie.com/ecom/gb.php?on0=D&os0=MIK&c=gc&cl=1090&ejc=4&i=';
+	var PAYPAL_LINK = 'https://www.e-junkie.com/ecom/gb.php?on0=D&c=single&cl=1090';
+	var GOOGLECHECKOUT_LINK = 'https://www.e-junkie.com/ecom/gb.php?on0=D&c=gc&cl=1090&ejc=4';
+
+	var PRODUCTID_PARAM = '&i=';
+	var AFFILIATE_PARAM = '&os0=';
 
 	var OS = {
 		Win: { Description: 'Digital Download for Windows 7 / XP / Vista', Code: 0 },
@@ -39,6 +42,17 @@ $(function () {
 		Bundles: [MIK, PN] // Choose which bundles to display.
 	};
 
+	function getCookie(name) {
+		var pairs = document.cookie.split('; ');
+		var i, pair;
+		for (i = 0, pair; pair = pairs[i] && pairs[i].split('='); i++) {
+			if (decodeURIComponent(pair[0]) === name) {
+				return decodeURIComponent(pair[1] || '');
+			}
+		}
+		return null;
+	}
+
 	function onBundleChanged() {
 		var code = options.Product.Code + options.OS.Code;
 		$('.bundle_checkbox').each(function () {
@@ -48,8 +62,16 @@ $(function () {
 			}
 		});
 
-		$('#paypal_button').attr('href', PAYPAL_LINK + code);
-		$('#googlecheckout_button').attr('href', GOOGLECHECKOUT_LINK + code);
+		var checkout_params = PRODUCTID_PARAM + code;
+
+		var cookie_value = getCookie('MixedInKeyVIP');
+		if (cookie_value) {
+			cookie_value = cookie_value.substring('VIP='.length(), cookie_value.length());
+			checkout_params += AFFILIATE_PARAM + cookie_value;
+		}
+
+		$('#paypal_button').attr('href', PAYPAL_LINK + checkout_params);
+		$('#googlecheckout_button').attr('href', GOOGLECHECKOUT_LINK + checkout_params);
 	}
 
 	function buyNowButtonClicked(e, os) {
