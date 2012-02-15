@@ -4,42 +4,40 @@ $(function () {
 
 	var PRODUCTID_PARAM = '&i=';
 	var AFFILIATE_PARAM = '&os0=';
+	var COOKIE_NAME = 'MixedInKeyVIP';
 
 	var OS = {
-		Win: { Description: 'Digital Download for Windows 7 / XP / Vista', Code: 0 },
+		Win: { Description: 'Digital Download for Windows', Code: 0 },
 		Mac: { Description: 'Digital Download for Mac OS X', Code: 2 }
 	};
 
-	var MIK = {
-		Name: 'Mixed In Key 5.0',
-		Price: 58,
-		Code: 1100, // Whatever MIK's standalone code is.
-		BundleCode: 10,
-		BannerImage: 'images/shoppingCartTop_MIK.png',
-		Description: 'Mixed In Key is award-winning DJ software that gives you the #1 technique of the world\'s best DJ\'s - harmonic mixing.'
-	};
-
-	var PN = {
-		Name: 'Platinum Notes 3.0',
-		Price: 98,
-		Code: 1100, // Whatever PN's standalone code is.
-		BundleCode: 20,
-		BannerImage: 'images/shoppingCartTop_PN.png',
-		Description: 'Platinum Notes improves your files and gives them perfect volume and correct pitch.  It removes distortion and clipped peaks.  100% automated and designed for top DJs.'
-	};
-
-	var Mashup = {
-		Name: 'Mashup Version 1.0',
-		Price: 39,
-		Code: 1200,
-		BundleCode: 30,
-		BannerImage: 'images/shoppingCartTop.png',
-		Description: 'We created Mashup software to help you beatmatch tracks and save your results to new MP3 files.'
-	};
+	var products = {
+		MIK: {
+			Name: 'Mixed In Key 5.0',
+			Price: 58,
+			Code: 50001,
+			BannerImage: 'images/shoppingCartTop_MIK.png',
+			Description: 'Analyze your music files and start using harmonic mixing. Award-winning software. '
+		},
+		PN: {
+			Name: 'Platinum Notes 3.0',
+			Price: 98,
+			Code: 301,
+			BannerImage: 'images/shoppingCartTop_PN.png',
+			Description: 'Improve your files and give them perfect volume and correct pitch. Remove distortion and clipped peaks. 100% automated and designed for top DJs.'
+		},
+		Mashup: {
+			Name: 'Mashup Version 1.0',
+			Price: 39,
+			Code: 1200,
+			BannerImage: 'images/shoppingCartTop.png',
+			Description: 'Create your own mashups in minutes.'
+		}
+	}
 
 	var options = {
-		Product: Mashup, // Main product.
-		Bundles: [MIK, PN] // Choose which bundles to display.
+		Product: products.Mashup, // Main product.
+		Bundles: [products.MIK, products.PN] // Choose which bundles to display.
 	};
 
 	function getCookie(name) {
@@ -64,7 +62,7 @@ $(function () {
 
 		var checkout_params = PRODUCTID_PARAM + code;
 
-		var cookie_value = getCookie('MixedInKeyVIP');
+		var cookie_value = getCookie(COOKIE_NAME);
 		if (cookie_value) {
 			cookie_value = cookie_value.substring('VIP='.length, cookie_value.length);
 			checkout_params += AFFILIATE_PARAM + cookie_value;
