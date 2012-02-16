@@ -1,4 +1,4 @@
-/* Basic jQuery Slider essential styles */
+/* Slider essential styles */
 
 ul.bjqs{position:relative; list-style:none;padding:0;margin:0;overflow:hidden; display:none;}
 li.bjqs-slide{display:none;position:absolute;}
@@ -10,7 +10,7 @@ ol.bjqs-markers li{float:left;}
 
 p.bjqs-caption{display:block;width:96%;margin:0;padding:2%;position:absolute;bottom:0;}
 
-/* demo styles */
+/* Demo styles */
 
 .slideshow {
 	width:900px;
@@ -59,18 +59,18 @@ ul.bjqs .video-description{
 }
 
  ol.bjqs-markers li{
-  float:left;
-  margin:0 3px;
+	float:left;
+	margin:0 3px;
 }
 
 ol.bjqs-markers li a{
-  display: block;
-  height: 11px;
-  width: 11px;
-  overflow: hidden;
-  text-indent: -9999px;
-  background: url(../img/pagination.png) 0 0;
-  border: none;
+	display: block;
+	height: 11px;
+	width: 11px;
+	overflow: hidden;
+	text-indent: -9999px;
+	background: url(../img/pagination.png) 0 0;
+	border: none;
 }
 
 ol.bjqs-markers li.active-marker a{
