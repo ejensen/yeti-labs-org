@@ -32,17 +32,18 @@ img {
 }
 
 /* Button styles */
-#buyWindowsButton, #buyMacOSXButton {
+.buyButton {
 	width: 217px;
 	height: 40px;
 	color: #FFF;
 	outline: 0;
 	text-decoration: none;
 	margin: 10px;
-	font-family: Arial, san-sarif;
+	text-align: left;
+	font-family: "Arial Rounded", ArialRound, ArialRounded, Arial, sans-serif;
 	font-size: 18px;
 	font-weight: bold;
-	padding: 27px 0 0 70px;
+	padding: 28px 0 0 78px;
 	display: -moz-inline-stack;
 	display: inline-block;
 	zoom: 1;
@@ -50,16 +51,16 @@ img {
 	text-shadow: 0 1px 0 rgba(0,0,0,.25);
 }
 
-#buyWindowsButton:hover, #buyMacOSXButton:hover {
+.buyButton:hover {
  outline: 0;
  text-decoration: underline;
 }
 
-#buyWindowsButton {
+.buyButton.windows {
 	background: transparent url('../images/buyWindows.png') no-repeat;
 }
 
-#buyMacOSXButton {
+.buyButton.mac {
 	background: transparent url('../images/buyMacOSX.png') no-repeat;
 }
 
