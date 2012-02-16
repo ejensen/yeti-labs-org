@@ -11,7 +11,7 @@ function buyButtons (options) {
 		Mac_Button: $('#buyMacOSXButton')
 	};
 
-	var options = $.extend({}, default_options, options);
+	options = $.extend({}, default_options, options);
 
 	var OS = {
 		Win: { Description: 'Digital Download for Windows' },
