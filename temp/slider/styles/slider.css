@@ -65,8 +65,8 @@ ul.bjqs .video-description{
 
 ol.bjqs-markers li a{
   display: block;
-  height: 12px;
-  width: 12px;
+  height: 11px;
+  width: 11px;
   overflow: hidden;
   text-indent: -9999px;
   background: url(../img/pagination.png) 0 0;
@@ -74,7 +74,7 @@ ol.bjqs-markers li a{
 }
 
 ol.bjqs-markers li.active-marker a{
-  background-position: 0 -12px;
+  background-position: 0 -11px;
 }
 
 .bjqs-controls {
