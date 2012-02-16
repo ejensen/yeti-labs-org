@@ -33,7 +33,7 @@ function buyButtons (options) {
 			Name: 'Mixed In Key 5.0',
 			Price: 58,
 			BannerImage: 'images/shoppingCartTop_MIK.png', //Path to MIK's banner
-			Description: 'Analyze your music files and start using harmonic mixing. Award-winning software.',
+			Description: 'Analyze your music files and start using harmonic mixing. Award-winning software.'
 		},
 		PN: {
 			Name: 'Platinum Notes 3.0',
@@ -67,7 +67,7 @@ function buyButtons (options) {
 			if (code.Products.length === checked_products.length) {
 				for (j = 0; j < checked_products.length; j++) {
 					product = checked_products[j];
-					if (code.Products.indexOf(product) === -1) {
+					if ($.inArray(product, code.Products) === -1) {
 						break;
 					}
 				}
