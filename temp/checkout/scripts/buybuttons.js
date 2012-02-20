@@ -98,7 +98,7 @@ function buyButtons (options) {
 
 		var cookie_value = getCookie(COOKIE_NAME);
 		if (cookie_value) {
-			cookie_value = cookie_value.substring('VIP='.length, cookie_value.length);
+			cookie_value = cookie_value.substring('VIP='.length);
 			checkout_params += AFFILIATE_PARAM + cookie_value;
 		}
 
