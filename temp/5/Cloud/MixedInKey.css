@@ -200,7 +200,7 @@ q
     margin: 0 auto 10px;
 }
 
-    #globalNavigation ul
+    #globalNavigation > ul
     {
         list-style: none;
         margin: 0 auto;
@@ -208,53 +208,53 @@ q
         padding-right: 40px;
     }
 
-        #globalNavigation li
+        #globalNavigation > ul > li
         {
             float: left;
         }
 
-            #globalNavigation li  a
+            #globalNavigation > ul > li > a
             {
                 display: block;
             }
 
-            #globalNavigation  li.mik  a
+            #globalNavigation > ul > li.mik > a
             {
                 background: url(http://c441723.r23.cf2.rackcdn.com/tab_mik.png) no-repeat;
                 height: 77px;
                 width: 190px;
             }
 
-                #globalNavigation li.mik  a:hover, #MIKGLOBAL_topnav  ul  li.mik  a.selected
+                #globalNavigation > ul > li.mik > a:hover, #globalNavigation > ul > li.mik > a.selected
                 {
                     background-position: 0 -82px;
                 }
 
-            #globalNavigation li.pn  a
+            #globalNavigation > ul > li.pn > a
             {
                 background: url(http://c441723.r23.cf2.rackcdn.com/tab_pn.png) no-repeat;
                 height: 77px;
                 width: 235px;
             }
 
-                #globalNavigation li.pn  a:hover, #MIKGLOBAL_topnav li.pn  a.selected
+                #globalNavigation > ul > li.pn > a:hover, #globalNavigation > ul > li.pn > a.selected
                 {
                     background-position: 0 -82px;
                 }
 
-            #globalNavigation li.mashup  a
+            #globalNavigation > ul > li.mashup > a
             {
                 background: url(http://c758895.r95.cf2.rackcdn.com/tab_mashup.png) no-repeat;
                 height: 77px;
                 width: 193px;
             }
 
-                #globalNavigation  ul  li.mashup  a:hover, #MIKGLOBAL_topnav  ul  li.mashup  a.selected
+                #globalNavigation > ul > li.mashup > a:hover, #globalNavigation > ul > li.mashup > a.selected
                 {
                     background-position: 0 -82px;
                 }
 
-            #globalNavigation span
+            #globalNavigation > ul > li > a span
             {
                 display: none;
             }
