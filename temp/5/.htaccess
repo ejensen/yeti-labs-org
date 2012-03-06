@@ -1,3 +1,0 @@
-<IfModule mod_alias.c>
-  RedirectMatch 301 http://yetilabs.org/Cloud/(.*) http://yetilabs.org/temp/5/Cloud/$1
-</IfModule>
