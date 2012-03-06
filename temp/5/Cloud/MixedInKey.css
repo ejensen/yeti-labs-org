@@ -194,7 +194,7 @@ q
 
 #globalNavigation
 {
-    background: url("http://c441723.r23.cf2.rackcdn.com/tab_background.png");
+    background: url(http://c441723.r23.cf2.rackcdn.com/tab_background.png);
     height: 82px;
     text-align: center;
     margin: 0 auto 10px;
@@ -220,7 +220,7 @@ q
 
             #globalNavigation > ul > li.mik > a
             {
-                background: url("http://c441723.r23.cf2.rackcdn.com/tab_mik.png") no-repeat;
+                background: url(http://c441723.r23.cf2.rackcdn.com/tab_mik.png) no-repeat;
                 height: 77px;
                 width: 190px;
             }
@@ -232,7 +232,7 @@ q
 
             #globalNavigation > ul > li.pn > a
             {
-                background: url("http://c441723.r23.cf2.rackcdn.com/tab_pn.png") no-repeat;
+                background: url(http://c441723.r23.cf2.rackcdn.com/tab_pn.png) no-repeat;
                 height: 77px;
                 width: 235px;
             }
@@ -244,7 +244,7 @@ q
 
             #globalNavigation > ul > li.mashup > a
             {
-                background: url("http://c758895.r95.cf2.rackcdn.com/tab_mashup.png") no-repeat;
+                background: url(http://c758895.r95.cf2.rackcdn.com/tab_mashup.png) no-repeat;
                 height: 77px;
                 width: 193px;
             }
