@@ -537,6 +537,7 @@ AddCharset utf-8 .css .js .xml .json .rss .atom
 
 <IfModule mod_alias.c>
   RedirectMatch 301 ^/projects/toggleswitch(.*) /toggleswitch$1
+  RedirectMatch 301 ^/Cloud/(.*) /temp/5/Cloud/$1
 </IfModule>
 
 <IfModule mod_speling.c>
