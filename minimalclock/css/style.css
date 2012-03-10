@@ -51,11 +51,11 @@ a {
 	position: absolute;
 	right: 5px;
 	top: 95px;
+	width: 165px;
 }
 #time {
 	color: #FFF;
 	font-size: 40px;
-	margin-left: 2px;
 }
 #main > .left {
 	float: left;
