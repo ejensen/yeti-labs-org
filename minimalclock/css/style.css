@@ -60,7 +60,7 @@ a {
 #main > .left {
 	float: left;
 	width: 600px;
-	height: 400px;
+	height: 420px;
 	background: url('../img/preview.png') no-repeat;
 	cursor: pointer;
 }
