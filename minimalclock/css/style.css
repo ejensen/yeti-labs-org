@@ -116,22 +116,22 @@ footer a:hover {
 }
 .footer_left {
 	float: left;
-	width: 270px;
+	width: 200px;
 	height: 100px;
 	margin-top: 0px;
 }
+.footer_center {
+	float: left;
+	width: 230px;
+	height: 100px;
+}
 .footer_right {
 	float: right;
-	width: 300px;
+	width: 240px;
 	height: 100px;
 	margin-right: 50px;
 	text-align: left;
 }
 .footer_right p {
 	padding: 0;
-}
-.footer_center {
-	float: left;
-	width: 90px;
-	height: 120px;
 }
