@@ -84,7 +84,7 @@ h2, h3 {
 	margin: 140px auto 100px auto;
 }
 footer {
-	width: 880px;
+	width: 860px;
 	clear: both;
 	margin: 0 auto;
 	padding-top: 20px;
@@ -108,7 +108,7 @@ footer a:hover {
 }
 .footer_left {
 	float: left;
-	width: 200px;
+	width: 250px;
 	height: 100px;
 }
 .footer_center {
@@ -118,9 +118,8 @@ footer a:hover {
 }
 .footer_right {
 	float: right;
-	width: 240px;
+	width: 270px;
 	height: 100px;
-	margin-right: 50px;
 	text-align: left;
 }
 .footer_right p {
