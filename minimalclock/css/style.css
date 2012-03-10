@@ -20,7 +20,8 @@
 }
 body {
 	background: #e9e9e9;
-	font-family: Helvetica, Verdana, Arial, sans-serif;	 
+	font-family: Helvetica, Verdana, Arial, sans-serif;
+	-webkit-font-smoothing: subpixel-antialiased;
 }
 p {
 	font-size: 14px;
@@ -45,7 +46,7 @@ a {
 }
 #clock {
 	font-family: 'GeosansLight';
-	color: #FCFCFC;
+	color: #FFF;
 	position: absolute;
 	right: 5px;
 	top: 95px;
