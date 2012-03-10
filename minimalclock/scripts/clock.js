@@ -19,10 +19,11 @@
 
 	function startClock() {
 		if (!started) {
-			started = true;
-			document.getElementById('screen').style.display = 'block';
+			started = true;			
 			updateTime();
 			setInterval(updateTime, 1000);
+			
+			document.getElementById('screen').style.display = 'block';	
 			preview.style.cursor = 'auto';
 
 			if (preview.removeEventListener) {
