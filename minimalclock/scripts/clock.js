@@ -25,8 +25,18 @@
 			setInterval(updateTime, 1000);
 			previewArea.style.cursor = 'auto';
 			previewArea.removeEventListener(startClock);
+
+			if (previewArea.removeEventListener) {
+				previewArea.removeEventListener('click', startClock); 
+			} else if (previewArea.detachEvent)  {
+				previewArea.detachEvent ('click', startClock);
+			}
 		}
 	}
-
-	previewArea.addEventListener('click', startClock);
+	
+	if (previewArea.addEventListener) {
+		previewArea.addEventListener('click', startClock, false); 
+	} else if (previewArea.attachEvent)  {
+		previewArea.attachEvent('onclick', startClock);
+	}
 })();
