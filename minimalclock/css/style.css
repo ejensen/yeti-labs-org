@@ -60,7 +60,7 @@ a {
 #main > .left {
 	float: left;
 	width: 600px;
-	height: 370px;
+	height: 400px;
 	background: url('../img/preview.png') no-repeat;
 	cursor: pointer;
 }
@@ -100,12 +100,8 @@ a {
 }
 .version {
 	position:absolute;
-	right: 23px;
+	right: 24px;
 	top: 12px;
-	font-size: 18px;
-	font-family: Arial;
-	text-shadow: -1px 1px 2px #628835;
-	filter: dropshadow(color=#628835, offx=-1, offy=1);
 }
 .file {
 	font-size: 10px;
@@ -117,7 +113,7 @@ footer {
 	width: 860px;
 	clear: both;
 	margin: 0 auto;
-	padding-top: 20px;
+	padding-top: 10px;
 	border-top: 1px solid #999;
 }
 footer p {
