@@ -4,6 +4,9 @@
 	<meta charset="utf-8" />
 	<title>MinimalClock Screensaver</title>
 	<meta name="author" content="Eric Jensen">
+	<html itemscope itemtype="http://schema.org/Product">
+	<meta itemprop="name" content="MinimalClock Screensaver">
+	<meta itemprop="image" content="http://yetilabs.org/minimalclock/img/preview_white.jpg">
 	<link rel="stylesheet" href="../css/base.css" type="text/css">
 	<link rel="stylesheet" href="css/style.css" type="text/css">
 	<!--[if lt IE 9]>
@@ -11,38 +14,33 @@
 	<![endif]-->
 </head>
 <body>
-	<header class="header">
-	</header>
 	<div class="wrap">
-		<div class="main">
+		<section class="main">
 			<div class="preview">
 				<div class="preview-left">
 					<img src="img/preview.jpg" width="600" height="370" alt="MinimalClock Screensaver"/>
 				</div>
 				<div class="preview-right">
 					<h1>MinimalClock</h1>
-					<p>As the name says, it shows the time… minimally.</p>
+					<p>As the name suggests, it shows the time…minimally.</p>
 					<a class="download" href="https://github.com/downloads/ejensen/minimalclock-screensaver/MinimalClock.exe">Download <span class="version">v1.0</span></a>
 					<span class="file">EXE Installer, 172KB</span>
+					<a class="download" href="http://ilovecolorz.net/minimalclock/">Download <span class="version">v1.1</span></a>
+					<span class="file">DMG File, 1.5MB</span>
 				</div>
 			</div>
-			<div class="instructions">
-				<div class="instructions-left long">
-					<h2>How to install</h2>
-					<p>Simply download, and double click the .exe installer. You can choose between 12 or 24 hour formats in the screensaver settings. Have fun!</p>
-					<p></p>
-				</div>	
-				<div class="instructions-left">
-					<h2>Versions</h2>
-					<p>V1.0 - First version</p>
-				</div>	
-			</div>
 		</div>
-		<div class="footer">
+		<footer class="footer">
 			<div class="footer_left">
 				<p>© 2012 <a href="http://yetilabs.org">yetilabs</a> & <a href="http://ilovecolorz.net">ilovecolorz</a></p>
-			</div>			
+			</div>
+			<div class="footer_center">
+			<div class="tw-button">
+				<a href="https://twitter.com/share" class="twitter-share-button" data-text="Get the MinimalClock ScreenSaver via @eric_r_jensen & @tomasbartko">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+			</div>
+			<div class="g-plusone" data-size="small" data-annotation="inline"></div>
 		</div>
+		</footer>
 	</div>
 	<script type="text/javascript">
 		var _gaq = _gaq || [];
@@ -55,9 +53,12 @@
 			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 		})();
 	</script>
-	<!--[if lt IE 7 ]>
-		<script src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
-		<script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
-	<![endif]-->
+	<script type="text/javascript">
+	  (function() {
+		var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+		po.src = 'https://apis.google.com/js/plusone.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+	  })();
+	</script>
 </body>
 </html>
