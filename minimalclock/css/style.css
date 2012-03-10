@@ -1,10 +1,20 @@
 @font-face {
-    font-family: 'CartoGothicStdBook';
-    src: url('font/CartoGothicStd-Book-webfont.eot');
-    src: url('font/CartoGothicStd-Book-webfont.eot?#iefix') format('embedded-opentype'),
-         url('font/CartoGothicStd-Book-webfont.woff') format('woff'),
-         url('font/CartoGothicStd-Book-webfont.ttf') format('truetype'),
-         url('font/CartoGothicStd-Book-webfont.svg#CartoGothicStdBook') format('svg');
+	font-family: 'CartoGothicStdBook';
+	src: url('font/CartoGothicStd-Book-webfont.eot');
+	src: url('font/CartoGothicStd-Book-webfont.eot?#iefix') format('embedded-opentype'),
+		url('font/CartoGothicStd-Book-webfont.woff') format('woff'),
+		url('font/CartoGothicStd-Book-webfont.ttf') format('truetype'),
+		url('font/CartoGothicStd-Book-webfont.svg#CartoGothicStdBook') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+    font-family: 'GeosansLight';
+    src: url('font/geosanslight-webfont.eot');
+    src: url('font/geosanslight-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/geosanslight-webfont.woff') format('woff'),
+         url('font/geosanslight-webfont.ttf') format('truetype'),
+         url('font/geosanslight-webfont.svg#GeosansLightRegular') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -20,8 +30,30 @@ p {
 a {
 	text-decoration: none;
 }
-h2, h3 {
-	font-weight: bold;
+#main {
+	width: 900px;
+	height: auto;
+	margin: 140px auto 100px auto;
+}
+#screen {
+	position: relative;
+	height: 240px;
+	width: 385px;
+	top: 50px;
+	left: 110px;
+	background-color: #000;
+}
+#clock {
+	font-family: 'GeosansLight';
+	color: #FFF;
+	position: absolute;
+	right: 5px;
+	top: 95px;
+}
+#time {
+	color: #FFF;
+	font-size: 40px;
+	margin-left: 2px;
 }
 .preview {
 	width: 900px;
@@ -31,6 +63,7 @@ h2, h3 {
 	float: left;
 	width: 600px;
 	height: 370px;
+	background: url('../img/preview.jpg') no-repeat;
 }
 .preview-right {
 	float: left;
@@ -78,11 +111,6 @@ h2, h3 {
 	margin: 0 0 0 5px;
 	color: #999;
 }
-.main {
-	width: 900px;
-	height: auto;
-	margin: 140px auto 100px auto;
-}
 footer {
 	width: 860px;
 	clear: both;
@@ -108,21 +136,20 @@ footer a:hover {
 }
 .footer_left {
 	float: left;
-	width: 250px;
+	width: 270px;
 }
 .footer_center {
 	float: left;
-	width: 230px;
+	width: 320px;
 }
 .footer_right {
-	float: right;
-	width: 270px;
+	float: left;
+	width: 240px;
 	text-align: left;
 }
 .footer_right p {
 	padding: 0;
 }
-
 .gp-button, .tw-button {
 	float: left;
 }
