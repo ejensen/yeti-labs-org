@@ -21,7 +21,6 @@
 body {
 	background: #e9e9e9;
 	font-family: Helvetica, Verdana, Arial, sans-serif;
-	-webkit-font-smoothing: subpixel-antialiased;
 }
 p {
 	font-size: 14px;
@@ -43,9 +42,11 @@ a {
 	top: 50px;
 	left: 110px;
 	background-color: #000;
+	display: none;
 }
 #clock {
-	font-family: 'GeosansLight';
+	font-family: 'GeosansLight', sans-serif;
+	-webkit-font-smoothing: subpixel-antialiased;
 	color: #FFF;
 	position: absolute;
 	right: 5px;
@@ -64,7 +65,11 @@ a {
 	float: left;
 	width: 600px;
 	height: 370px;
-	background: url('../img/preview.jpg') no-repeat;
+	background: url('../img/preview.png') no-repeat;
+	cursor: pointer;
+}
+.preview-left:hover {
+	background-position: -600px 0;
 }
 .preview-right {
 	float: left;
@@ -74,7 +79,7 @@ a {
 }
 .preview-right > h1 {
 	font-size: 30px;
-	font-family: 'CartoGothicStdBook', serif;
+	font-family: 'CartoGothicStdBook', sans-serif;
 	padding: 0;
 	color: #000;
 	margin: 23px 0 0 0;

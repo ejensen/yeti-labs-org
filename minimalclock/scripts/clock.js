@@ -1,4 +1,7 @@
 (function() {
+	var started = false;
+	var previewArea = document.getElementById('preview-area');
+
 	function updateTime() {
 		var time = new Date(),
 			hours = time.getHours(),
@@ -13,6 +16,17 @@
 
 		document.getElementById('time').innerHTML = timeString;
 	}
-	updateTime();
-	setInterval(updateTime, 1000);
+	
+	function startClock() {
+		if (!started) {
+			started = true;
+			document.getElementById('screen').style.display = 'block';
+			updateTime();
+			setInterval(updateTime, 1000);
+			previewArea.style.cursor = 'auto';
+			previewArea.removeEventListener(startClock);
+		}
+	}
+
+	previewArea.addEventListener('click', startClock);
 })();
