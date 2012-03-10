@@ -57,34 +57,30 @@ a {
 	font-size: 40px;
 	margin-left: 2px;
 }
-.preview {
-	width: 900px;
-	height: 370px;
-}
-.preview-left {
+#main > .left {
 	float: left;
 	width: 600px;
 	height: 370px;
 	background: url('../img/preview.png') no-repeat;
 	cursor: pointer;
 }
-.preview-left:hover {
+#main  > .left:hover {
 	background-position: -600px 0;
 }
-.preview-right {
+#main  > .right {
 	float: left;
 	width: 195px;
 	height: 370px;
 	margin-left: 7px;
 }
-.preview-right > h1 {
+#main  > .right > h1 {
 	font-size: 30px;
 	font-family: 'CartoGothicStdBook', sans-serif;
 	padding: 0;
 	color: #000;
 	margin: 23px 0 0 0;
 }
-.preview-right > p {
+#main  > .right > p {
 	font-size: 12px;
 	margin-top: 2px;
 }
@@ -140,21 +136,18 @@ footer a:hover {
 	color: #666;
 	border-bottom: 1px solid;
 }
-.footer_left {
+footer > .left {
 	float: left;
 	width: 270px;
 }
-.footer_center {
+footer > .center {
 	float: left;
 	width: 320px;
 }
-.footer_right {
+footer > .right {
 	float: left;
 	width: 240px;
 	text-align: left;
-}
-.footer_right p {
-	padding: 0;
 }
 .gp-button, .tw-button {
 	float: left;
