@@ -108,13 +108,12 @@ footer a:hover {
 }
 .footer_left {
 	float: left;
-	width: 200px;
+	width: 210px;
 	height: 100px;
-	margin-top: 0px;
 }
 .footer_center {
 	float: left;
-	width: 230px;
+	width: 220px;
 	height: 100px;
 }
 .footer_right {
