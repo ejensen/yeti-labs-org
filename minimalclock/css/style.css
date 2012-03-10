@@ -109,17 +109,14 @@ footer a:hover {
 .footer_left {
 	float: left;
 	width: 250px;
-	height: 100px;
 }
 .footer_center {
 	float: left;
 	width: 230px;
-	height: 100px;
 }
 .footer_right {
 	float: right;
 	width: 270px;
-	height: 100px;
 	text-align: left;
 }
 .footer_right p {
