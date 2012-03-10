@@ -135,3 +135,7 @@ footer a:hover {
 .footer_right p {
 	padding: 0;
 }
+
+.g-plusone, tw-button {
+	float: left;
+}
