@@ -24,7 +24,6 @@
 			updateTime();
 			setInterval(updateTime, 1000);
 			previewArea.style.cursor = 'auto';
-			previewArea.removeEventListener(startClock);
 
 			if (previewArea.removeEventListener) {
 				previewArea.removeEventListener('click', startClock); 
