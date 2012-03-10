@@ -42,7 +42,7 @@ a {
 	top: 50px;
 	left: 110px;
 	background-color: #000;
-	display: none;
+	visibility: hidden;
 }
 #clock {
 	font-family: 'GeosansLight', sans-serif;

@@ -23,7 +23,7 @@
 			updateTime();
 			setInterval(updateTime, 1000);
 			
-			document.getElementById('screen').style.display = 'block';	
+			document.getElementById('screen').style.visibility = 'visible';	
 			preview.style.cursor = 'auto';
 
 			if (preview.removeEventListener) {
