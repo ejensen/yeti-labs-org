@@ -63,13 +63,11 @@ img {
 }
 
 .windows .logo {
-	background: url('../images/windows8_logo_white.png') no-repeat;
-	background-position: 4px 0;
+	background: 4px 0 url('../images/windows8_logo_white.png') no-repeat;
 }
 
 .mac .logo {
-	background: url('../images/apple_logo.png') no-repeat;
-	background-position: 15px 0;
+	background: 16px 0 url('../images/apple_logo.png') no-repeat;
 }
 
 .buyButton:hover {
