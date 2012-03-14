@@ -1,8 +1,6 @@
 ﻿/* Page styles */
 body {
 	font-family: Verdana, Arial, Helvetica, sans-serif;
-	font-size: 80%;
-	line-height: 150%;
 	background-color: #f0f0f0;
 	margin: 0;
 }
@@ -11,16 +9,9 @@ img {
 	border: 0;   
 }
 
-.section {
-	background: #FFF;
-	width: 700px;
-	margin: 20px auto;
-	padding: 20px 0;
-	text-align: center;
-	-webkit-border-radius: 12px;
-	 -khtml-border-radius: 12px;
-	   -moz-border-radius: 12px;
-			border-radius: 12px;
+.main {
+	width: 960px;
+	margin: 2em auto;
 }
 
 .smallText {
@@ -33,39 +24,62 @@ img {
 
 /* Button styles */
 .buyButton {
-	width: 217px;
-	height: 40px;
+	height: 52px;
+	line-height: 52px;
 	color: #FFF;
 	outline: 0;
-	text-decoration: none;
 	margin: 10px;
+	padding-right: 27px;
+	text-decoration: none;
 	text-align: left;
 	font-family: "Arial Rounded", ArialRound, ArialRounded, Arial, sans-serif;
 	font-size: 18px;
 	font-weight: bold;
-	padding: 28px 0 0 78px;
-	display: -moz-inline-stack;
+	text-shadow: 0 1px 0 rgba(0,0,0,.25);
+	border-style: solid;
+	border-width: 2px;
+	border-color: #0095f4 #008df0;
+	cursor: pointer;
+	background: #0083eb url('../images/button_bg.gif') repeat-x;
+	background-size: 100% 100%;
+	-webkit-border-radius: 8px;
+	 -khtml-border-radius: 8px;
+	   -moz-border-radius: 8px;
+	        border-radius: 8px;
+	-webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+	   -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+			box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
 	display: inline-block;
 	zoom: 1;
 	*display: inline;
-	text-shadow: 0 1px 0 rgba(0,0,0,.25);
+}
+
+.logo {
+	width: 78px;
+	height: 64px;
+	float: left;
+	position: relative;
+	top: -12px;
+}
+
+.windows .logo {
+	background: url('../images/windows8_logo_white.png') no-repeat;
+	background-position: 4px 0;
+}
+
+.mac .logo {
+	background: url('../images/apple_logo.png') no-repeat;
+	background-position: 15px 0;
 }
 
 .buyButton:hover {
- outline: 0;
- text-decoration: underline;
-}
-
-.buyButton.windows {
-	background: transparent url('../images/buyWindows.png') no-repeat;
-}
-
-.buyButton.mac {
-	background: transparent url('../images/buyMacOSX.png') no-repeat;
+	text-decoration: underline;
 }
 
 /* LightBox styles */
 .lightbox {
+	font-size: 80%;
+	line-height: 150%;
 	width: 700px;
 	background: white;
 }
