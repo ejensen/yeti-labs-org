@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Bug</title>
+	<style type="text/css">
+		#clickArea {
+			height: 400px;
+			cursor: pointer;
+			background-color: lightgray;
+		}
+		#hiddenText {
+			display: none;
+		}
+	</style>
+</head>
+<body>
+	<p>Click on the gray area below</p>
+	<div id="clickArea">
+		<p id="hiddenText">
+			This text shouldn't be highlighted.
+		</p>
+	</div>
+	<script type="text/javascript">
+	(function() {
+		var clickArea = document.getElementById('clickArea');
+
+		function showText() {
+			clickArea.removeEventListener('click', showText);
+			document.getElementById('hiddenText').style.display = 'block';		
+		}
+
+		clickArea.addEventListener('click', showText); 
+	})();
+	</script>
+</body>
+</html>
