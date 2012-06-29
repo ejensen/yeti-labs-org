@@ -89,4 +89,5 @@ footer {
 	margin: 1em;
 	text-decoration: none;
 	font-family: Helvetica, Arial, sans-sarif;
+	text-transform:lowercase;
 }
