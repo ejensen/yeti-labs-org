@@ -1,22 +1,33 @@
 ﻿<!DOCTYPE html>
-<html>
+<html lang="en-US" prefix="og: http://ogp.me/ns#" itemtype="http://schema.org/Product">
 <head>
+	<meta charset="utf-8" />
+	<meta name="language" content="EN">
+	<meta name="author" content="Eric Jensen, contact@yetilabs.org" />
+	<meta name="keywords" content="ToggleSwitch, Silverlight, WPF, Yeti Labs"/>
+	<meta itemprop="name" content="MinimalClock Screensaver">
+	<meta itemprop="description" content="ToggleSwitch control for WPF & Silverlight">
+	<meta itemprop="image" content="http://yetilabs.org/toggleswitch/logo_large.png">
+	<meta name="og:title" content="MinimalClock Screensaver"/>
+	<meta name="og:description" content="ToggleSwitch control for WPF & Silverlight"/>
+	<meta name="og:type" content="product"/>
+	<meta name="og:image" content="http://yetilabs.org/toggleswitch/logo_large.png"/>
+	<meta name="og:email" content="contact@yetilabs.org"/>
 	<title>Toggle Switch Demo</title>
-	<meta name="author" content="Eric Jensen">
 	<style type="text/css">
 	html, body {
-		height:100%;
-		overflow:auto;
+		height: 100%;
+		overflow: auto;
 	}
 	body {
-		padding:0;
-		margin:0;
-		background-color:#3e434a;
+		padding: 0;
+		margin: 0;
+		background-color: #3e434a;
 	}
 	#silverlightControlHost {
-		height:100%;
-		overflow:hidden;
-		text-align:center;
+		height: 100%;
+		overflow: hidden;
+		text-align: center;
 	}
 	</style>
 	<script type="text/javascript">
@@ -54,18 +65,17 @@
 		
 			throw new Error(errMsg);
 		}
-    </script>
-	<script type="text/javascript">
-	  var _gaq = _gaq || [];
-	  _gaq.push(['_setAccount', 'UA-27753955-3']);
-	  _gaq.push(['_setDomainName', '.yetilabs.org']);
-	  _gaq.push(['_trackPageview']);
-
-	  (function() {
-		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-	  })();
+		
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-27753955-3']);
+		_gaq.push(['_setDomainName', '.yetilabs.org']);
+		_gaq.push(['_trackPageview']);
+	
+		(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
 	</script>
 </head>
 <body>
@@ -73,13 +83,13 @@
 		<object data="data:application/x-silverlight-2," type="application/x-silverlight-2" width="100%" height="100%">
 		<param name="source" value="demo.xap"/>
 		<param name="onError" value="onSilverlightError" />
-		<param value="true" name="windowless"/>
+		<param name="windowless" value="true"/>
 		<param name="minRuntimeVersion" value="4.0.50826.0" />
 		<param name="autoUpgrade" value="true" />
 		<a href="http://go.microsoft.com/fwlink/?LinkID=149156&v=4.0.50826.0" style="text-decoration:none">
 			<img src="http://go.microsoft.com/fwlink/?LinkId=161376" alt="Get Microsoft Silverlight" style="border-style:none"/>
 		</a>
-	    </object><iframe id="_sl_historyFrame" style="visibility:hidden;height:0px;width:0px;border:0px"></iframe></div>
+	    </object></div>
 		<a href="http://toggleswitch.codeplex.com"><img style="position:absolute;top:0;right:0;border:0;" src="ribbon.png" alt="Download on CodePlex"></a>
 </body>
 </html>
