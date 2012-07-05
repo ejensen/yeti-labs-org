@@ -1,11 +1,6 @@
-﻿html {
-	height: 100%
-}
-
-body {
+﻿body {
 	font-family: Verdana, Arial, Helvetica, sans-serif;
 	font-size: 18px;
-	background-repeat: repeat-x;
 	background-color: #f0f0f0;
 	font-size: 13px;
 	line-height: 150%;
@@ -38,11 +33,6 @@ section {
 	 -khtml-border-radius: 8px;
 	   -moz-border-radius: 8px;
 			border-radius: 8px;
-}
-
-section * {
-	padding-left: 32px;
-	padding-right: 32px;
 }
 
 h1, h2 {
@@ -145,23 +135,4 @@ h1, h2 {
 	background: url('../images/button_right.gif') top right no-repeat;
 	margin-right: -6px;
 	border: 0;
-}
-
-/* page shade */
-#share_shade {
-	height: 130px;
-	display: none;
-	color: white;
-	position: fixed;
-	bottom: 0;
-	z-index: 999;
-	width: 900px;
-	margin: 0 auto;
-	background-color: #0081EA;
-	background-color: rgba(0, 129, 234, 0.75);
-}
-
-#share_shade_inner {
-	margin: 1em auto;
-	width: 900px;
 }
