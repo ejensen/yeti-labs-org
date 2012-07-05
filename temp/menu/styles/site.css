@@ -35,6 +35,11 @@ section {
 			border-radius: 8px;
 }
 
+section > * {
+	padding-left: 32px;
+	padding-right: 32px;
+}
+
 h1, h2 {
 	font-weight: normal;
 	font-size: 20px;
