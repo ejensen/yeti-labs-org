@@ -1,0 +1,264 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; 
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; 
+}
+body {
+  line-height: 1; 
+}
+
+/* Page */
+
+.grater-container {
+    width: 640px;
+    margin: 0 auto;
+}
+@media all and (max-width: 660px) {
+    .grater-container {
+        width: 300px;
+    }
+}
+.grater {
+    zoom: 1;
+}
+.grater > div {
+    width: 300px;
+    margin: 0 0 2em;
+}
+.grater > div:first-child {
+    float: left;
+}
+.grater > div:last-child {
+    float: right;
+}
+.grater.reverse > div:first-child {
+    float: right;
+}
+.grater.reverse > div:last-child {
+    float: left;
+}
+.grater:before,
+.grater:after {
+    content: "";
+    display: table;
+}
+.grater:after {
+    clear: both;
+}
+@media all and (max-width: 660px) {
+    .grater {
+        margin-bottom: 1em;
+    }
+    .grater > div {
+        float: none !important;
+        margin: 0 auto 2em;
+    }
+}
+html,
+button,
+input {
+    -webkit-font-smoothing: antialiased;
+}
+html,
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+}
+header {
+    margin: 0 auto;
+    background: #45b3f9;
+    padding: 80px 0;
+}
+body {
+    color: #444;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+}
+a {
+    color: #0881b3;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+}
+a:hover {
+    -webkit-transition: border 0.3s ease-in-out;
+    -moz-transition: border 0.3s ease-in-out;
+    transition: border 0.3s ease-in-out;
+    border-bottom: 1px solid;
+}
+p {
+    margin: 0 0 1em;
+    line-height: 1.4em;
+}
+.small {
+    font-size: 0.8em;
+    font-weight: normal;
+}
+h1 {
+    display: none;
+}
+body > header img {
+    width: 320px;
+    height: 140px;
+    margin: 0 auto;
+    display: block;
+}
+@media all and (max-width: 660px) {
+    body > header img {
+        width: 280px;
+        height: 84px;
+    }
+}
+h2 {
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.2em;
+    margin-bottom: 0.5em;
+}
+footer {
+    text-align: center;
+    font-size: 18px;
+    color: #999;
+    padding: 30px 0;
+}
+footer a {
+    color: #999;
+}
+section {
+    padding: 40px 20px;
+}
+section p:last-child {
+    margin-bottom: 0;
+}
+section div.grater > div {
+    margin-bottom: 0;
+    position: relative;
+}
+section div.grater > div:last-child {
+    width: 256px;
+    height: 256px;
+}
+section a.app-icon {
+    width: 256px;
+    height: 256px;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -128px 0 0 -128px;
+}
+section a.app-icon img {
+    width: 100%;
+    height: 100%;
+}
+section a.app-icon:hover {
+    border-color: transparent;
+}
+@media all and (max-width: 660px) {
+    section {
+        padding: 40px 10px;
+    }
+    section div.grater {
+        text-align: center;
+    }
+    section div.grater > div {
+        height: auto !important;
+    }
+    section div.grater > div:first-child {
+        margin-bottom: 3em;
+    }
+    section a.app-icon {
+        position: relative;
+        top: 0;
+        left: 0;
+        margin: 0 auto;
+    }
+}
+.tags > span {
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    padding: 4px;
+    font-size:
+}
+#steller {
+    background-color: #1b173b;
+    color: #dcdcec;
+}
+#steller a {
+    color: #dcdcec;
+}
+#cheezburger {
+    background-color: #1a5a73;
+    color: #fff;
+}
+#cheezburger a {
+    color: #fff;
+}
+#mik {
+    background-color: #07233f;
+    color: #dcdcec;
+}
+#mik a {
+    color: #dcdcec;
+}
+#techsmith {
+    background-color: #e01246;
+    color: #fff;
+}
+#techsmith a {
+    color: #fff;
+}
+#kindling {
+    background-color: #2d2725;
+    color: #fee9c1;
+}
+#kindling a {
+    color: #fee9c1;
+}
+#about {
+    background-color: #f7e47c;
+    color: #4c4e53;
+}
+#about a {
+    color: #e58240;
+}
+#about .headshot {
+    display: block;
+    text-align: center;
+    width: 190px;
+    margin: 0 auto;
+}
+#about .headshot img {
+    width: 190px;
+    height: 190px;
+    display: block;
+    margin: 0 auto 1em;
+}
+#about .headshot .name {
+    display: block;
+}
