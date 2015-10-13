@@ -8,29 +8,26 @@ hr {
 h1, h2, h3, h4, h5, h6, body {
 	font-family: Georgia, "Times New Roman", serif;
 }
-a, a:visited {
-	color: #444;
-	text-decoration: underline;
-	outline: 0;
-}
 h1 {
 	text-align: center;
 }
-h1, a:hover, a:focus {
+h1, nav a:hover, nav a:focus, #contact:hover, #contact:focus {
 	background-color: #ffc;
 }
-#main a {
+nav a, #contact {
 	text-decoration: none;
 	border-bottom: 1px dashed #AAA;
+	color: #444;
+	outline: none;
 }
-a:hover, a:focus {
+nav a:hover, nav a:focus, #contact:hover, #contact:focus {
 	border-bottom-color: #666;
 	-webkit-transition-duration: 300ms;
 	-moz-transition-duration: 300ms;
 	-o-transition-duration: 300ms;
 	transition-duration: 300ms;
 }
-nav > ul  {
+nav > ul {
 	margin-top: 18px;
 }
 nav > ul > li {
@@ -51,8 +48,9 @@ nav > ul > li > img {
 	position: relative;
 }
 section {
-	height: 315px;
+	height: 270px;
 	background: #FFF;
+	padding: 36px 22px;
 	-webkit-border-radius: 10px;
 	-khtml-border-radius: 10px;
 	-moz-border-radius: 10px;
@@ -60,9 +58,6 @@ section {
 	-moz-box-shadow: 0 1px 3px rgba(0,0,0,0.3);
 	-webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.3);
 	box-shadow: 0 1px 3px rgba(0,0,0,0.3);
-}
-#content {
-	padding: 36px 22px;
 }
 #yeti {
 	position: absolute; 
@@ -72,11 +67,17 @@ section {
 	background-position: -336px -46px;
 	height: 82px; 
 	width: 128px;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
-#yeti:hover {
+#yeti:hover, #yeti:focus {
 	background-position: 0;
 	height: 128px; 
 	width: 232px;
+	border: none;
+	outline: none;
+
 }
 footer {
 	position: absolute;
@@ -92,5 +93,5 @@ footer {
 	margin: 1em;
 	text-decoration: none;
 	font-family: Helvetica, Arial, sans-sarif;
-	text-transform:lowercase;
+	text-transform: lowercase;
 }
