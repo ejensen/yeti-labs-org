@@ -103,7 +103,7 @@ body {
 a {
     color: #0881b3;
     text-decoration: none;
-    border-bottom: 1px solid transparent;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 a:hover {
     -webkit-transition: border 0.3s ease-in-out;
@@ -152,18 +152,18 @@ footer a {
 section {
     padding: 40px 20px;
 }
-section p:last-child {
+p:last-child {
     margin-bottom: 0;
 }
-section div.grater > div {
+div.grater > div {
     margin-bottom: 0;
     position: relative;
 }
-section div.grater > div:last-child {
+div.grater > div:last-child {
     width: 256px;
     height: 256px;
 }
-section a.app-icon {
+a.app-icon {
     width: 256px;
     height: 256px;
     display: block;
@@ -171,13 +171,14 @@ section a.app-icon {
     top: 50%;
     left: 50%;
     margin: -128px 0 0 -128px;
+    border: none;
 }
-section a.app-icon img {
+a.app-icon img {
     width: 100%;
     height: 100%;
 }
-section a.app-icon:hover {
-    border-color: transparent;
+a.app-icon:hover {
+    border: none;
 }
 @media all and (max-width: 660px) {
     section {
@@ -246,6 +247,7 @@ section a.app-icon:hover {
 }
 #about a {
     color: #e58240;
+    border-bottom-color: transparent;
 }
 #about .headshot {
     display: block;
