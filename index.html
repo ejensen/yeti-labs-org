@@ -1,49 +1,139 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en-US">
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width" />
-	<meta name="author" content="Eric Jensen" />
-	<meta name="keywords" content="Kindling, MinimalClock screensaver, ToggleSwitch control, Yeti Labs"/>
-	<title>Yeti Labs</title>
-	<link rel="shortcut icon" href="favicon.ico" />
-	<link rel="stylesheet" type="text/css" href="css/base.css" />
-	<link rel="stylesheet" type="text/css" href="css/style.css" />
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <meta name="author" content="Eric Jensen, eric@yetilabs.org">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>Yeti Labs</title>
+  <link rel="shortcut icon" href="favicon.png">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+  <link href="css/style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-	<div id="main">
-		<section>
-			<header><h1>Yeti Labs <img src="img/labs.png" width="42" height="42"/></h1></header>
-			<hr />
-			<nav role="navigation">
-				<ul>
-					<li title="Kindling for Campfire">
-						<img src="img/kindling.png" width="24" height="24" alt="Kindling for Campfire"/>
-						<a href="https://chrome.google.com/webstore/detail/abnakpmgckdkcpgbcejajjbllagggcif" target="_blank">Kindling</a>
-					</li>
-					<li title="Minimal Clock Screensaver">
-						<img src="img/clock.png" width="24" height="24" alt="Minimal Clock Screensaver"/>
-						<a href="minimalclock">Minimal Clock</a>
-					</li>
-					<li title="Toggle Switch .NET Control Library">
-						<img src="img/switch.png" width="24" height="24" alt="Toggle Switch .NET Control Library"/>
-						<a href="http://toggleswitch.codeplex.com" target="_blank">Toggle Switch</a>
-					</li>
-				</ul>
-			</nav>
-			<a id="yeti" href="about" title="About">About</a>
-		</section>
-	</div>
-	<footer><a id="contact" href="about">© Eric Jensen</a></footer>
-	<script>
-		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  <header>
+   <h1>Yeti Labs</h1>
+   <img src="img/logo.svg" alt="Yeti Labs">
+ </header>
 
-		ga('create', 'UA-27753955-3', 'auto');
-		ga('send', 'pageview');
-	</script>
+ <section id="about">
+  <div class="grater-container grater reverse">
+    <div>
+      <h2>About</h2>
+      <p>I enjoy building delightful apps. When I'm not programming, you can find me running, hiking, or tending to my houseplant collection.</p>
+      <p>I currently live and work in <a href="https://en.wikipedia.org/wiki/Portland,_Oregon" target="_blank">Portland, Oregon</a>.</p>
+      <p>You can find me on <a href="https://github.com/ejensen" target="_blank">GitHub</a>, <a href="https://www.linkedin.com/pub/eric-jensen/10/466/7a5" target="_blank">LinkedIn</a>, or <a href="mailto:%65%72%69%63@%79%65%74%69%6c%61%62%73.%6f%72%67">contact me directly</a>.</p>
+    </div>
+    <div class="headshot">
+      <img alt="Eric Jensen" src="img/avatar.png" height="190" width="190">
+      <span class="name">Eric Jensen</span>
+    </div>
+  </div>
+</section>
+
+ <section id="kiva">
+  <div class="grater grater-container">
+    <div>
+      <h2>Kiva <span class="small">(2019 - current)</span></h2>
+      <p>Principal iOS Engineer working on Kiva's mobile apps.</p>
+      <p class="tags small"><span>swift</span></p>
+    </div>
+    <div>
+      <a href="https://www.kiva.org" class="app-icon" target="_blank"><img alt="Kiva" src="img/kiva.png" height="256" width="256"></a>
+    </div>
+  </div>
+</section>
+
+<section id="nike">
+  <div class="grater grater-container reverse">
+    <div>
+      <h2>Nike <span class="small">(2016 - 2018)</span></h2>
+      <p>Principal iOS Engineer of Nike's commerce apps. Focused on <a href="https://itunes.apple.com/us/app/snkrs/id911130812?mt=8" target="_blank">SNKRS</a> and the <a href="https://itunes.apple.com/app/nike+/id1095459556" target="_blank">Nike App</a>.</p>
+      <p class="tags small"><span>objective-c</span> <span>swift</span></p>
+    </div>
+    <div>
+      <a href="https://www.nike.com/us/en_us/c/nike-plus/nike-app" class="app-icon" target="_blank"><img alt="Nike" src="img/nike.png" height="256" width="256"></a>
+    </div>
+  </div>
+</section>
+
+ <section id="steller">
+  <div class="grater grater-container">
+    <div>
+      <h2>Steller <span class="small">(2013 - 2016)</span></h2>
+      <p>Lead developer of <a href="https://steller.co" target="_blank">Steller's</a> iOS app. Featured in Apple's “Best New Apps”, “Editors' Choice”, and “Best of 2014”.</p>
+      <p class="tags small"><span>objective-c</span> <span>swift</span></p>
+    </div>
+    <div>
+      <a href="https://steller.co" class="app-icon" target="_blank"><img alt="Steller app" src="img/steller.png" height="256" width="256"></a>
+    </div>
+  </div>
+</section>
+
+<section id="cheezburger">
+  <div class="grater grater-container reverse">
+    <div>
+      <h2>Cheezburger <span class="small">(2012 - 2013)</span></h2>
+      <p>Lead developer of the <a href="https://itunes.apple.com/us/app/cheezburger-funny-memes-videos/id598338664?mt=8" target="_blank">Cheezburger iOS app</a>. Was the most used humor app according to comScore.</p>
+      <p>Developed the <a href="https://www.microsoft.com/en-us/store/apps/cheezburger/9wzdncrdkq18" target="_blank">Cheezburger Windows app</a>. Topped the most used entertainment apps, following the launch on Windows 8.</p>
+      <p class="tags small"><span>objective-c</span> <span>javascript</span> <span>c#</span></p>
+    </div>
+    <div>
+      <a href="https://www.cheezburger.com" class="app-icon" target="_blank"><img alt="Cheezburger" src="img/cheezburger.png" height="256" width="256"></a>
+    </div>
+  </div>
+</section>
+
+<section id="mik">
+  <div class="grater grater-container">
+    <div>
+      <h2>Mixed In Key <span class="small">(2012)</span></h2>
+      <p>Developed the Windows version of <a href="https://mashup.mixedinkey.com" target="_blank">Mashup</a>. Nominated for the “Best DJ Tool of the Year” by DJ Magazine.</p>
+      <p>Developed <a href="https://itunes.apple.com/us/app/imashup/id503804151?mt=8" target="_blank">iMashup</a>, an iOS app often found in the top 20 paid music apps.</p>
+      <p class="tags small"><span>objective-c</span> <span>c#</span></p>
+    </div>
+    <div>
+      <a href="https://mashup.mixedinkey.com" class="app-icon" target="_blank"><img alt="Mashup" src="img/mashup.png" height="256" width="256"></a>
+    </div>
+  </div>
+</section>
+
+<section id="techsmith">
+  <div class="grater grater-container reverse">
+    <div>
+      <h2>TechSmith <span class="small">(2010 - 2011)</span></h2>
+      <p>Worked on all facets of <a href="https://www.techsmith.com/techsmith-relay.html" target="_blank">TechSmith Relay</a>, a screen-capture solution comprising of a video encoding server, web frontend, and native Mac &amp; PC clients.</p>
+      <p class="tags small"><span>c++</span> <span>c#</span> <span>objective-c</span> <span>javascript</span></p>
+    </div>
+    <div>
+      <a href="https://www.techsmith.com/techsmith-relay.html" class="app-icon" target="_blank"><img alt="TechSmith Relay" src="img/relay.png" height="256" width="256"></a>
+    </div>
+  </div>
+</section>
+
+<section id="kindling">
+  <div class="grater grater-container">
+    <div>
+      <h2>Kindling <span class="small">(2011 - 2015)</span></h2>
+      <p><a href="https://chrome.google.com/webstore/detail/kindling-for-campfire/abnakpmgckdkcpgbcejajjbllagggcif" target="_blank">Kindling</a> is an <a href="https://github.com/ejensen/Kindling" target="_blank">open-source</a> Chrome extension for adding useful features to <a href="https://campfirenow.com/" target="_blank">Campfire</a> group chats.</p>
+      <p class="tags small"><span>javascript</span></p>
+    </div>
+    <div>
+      <a href="https://chrome.google.com/webstore/detail/kindling-for-campfire/abnakpmgckdkcpgbcejajjbllagggcif" class="app-icon" target="_blank"><img alt="Kindling for Campfire" src="img/kindling.png" height="256" width="256"></a>
+    </div>
+  </div>
+</section>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-27753955-3', 'auto');
+  ga('send', 'pageview');
+</script>
+
 </body>
 </html>
