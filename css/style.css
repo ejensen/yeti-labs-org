@@ -200,9 +200,12 @@ a.app-icon:hover {
     background-color: #408F40;
     color: #f5f5f5;
 }
+#kiva a {
+    color: #f5f5f5;
+}
 #nike {
     background-color: #202020;
-    color: #ffffff;
+    color: #fff;
 }
 #nike a {
     color: #f5f5f5;
