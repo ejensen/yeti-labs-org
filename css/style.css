@@ -196,6 +196,13 @@ a.app-icon:hover {
     padding: 4px;
     font-size:
 }
+#frame {
+    background-color: #5B53FF;
+    color: #fff;
+}
+#frame a {
+    color: #fff;
+}
 #kiva {
     background-color: #408F40;
     color: #f5f5f5;
